@@ -6,7 +6,7 @@ in companion with the nonlinear CG algorithm using
 default and custom stopping criteria for
 variational problems of the form
 
-$$
+```math
 \int_\Omega
 \left\langle
     \mathbf A (\nabla u (\mathbf x)),
@@ -20,7 +20,7 @@ $$
 \int_\Omega
 f(\mathbf x) v(\mathbf x)
 ~\mathrm d \mathbf x,
-$$
+```
 
 where $\phi \in C^1(\mathbb R)$ is the
 strictly monotonically increasing
