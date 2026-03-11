@@ -1,9 +1,11 @@
 # Summary
 
 In this folder, we consider problems of the form
-$$
+
+```math
 \nabla(A(x) \nabla u(x)) + c u(x) = 1,
-$$
+```
+
 where $A(x) \in \mathbb{R}^2$,
 $c \in \{0, 1\}$,
 $\Omega = (0, 1)^2$,
@@ -18,29 +20,29 @@ the matrix $A(x)$.
 
 ## Problem 1 (Anisotropic)
 
-$$
+```math
 A(x) =
 \begin{pmatrix}
 -1 & 0 \\ 0 & -10^{-2}
 \end{pmatrix},
 \quad
 c=1
-$$
+```
 
 ## Problem 2 (Singularly Perturbed)
 
-$$
+```math
 A(x) = - 10^{-2}
 \begin{pmatrix}
 1 & 0 \\ 0 & 1
 \end{pmatrix},
 \quad
 c=1
-$$
+```
 
 ## Problem 4 (Piecewise constant)
 
-$$
+```math
 A(x) = -\kappa (x) \text{Id}_{2\times 2},
 \quad
 c=1,
@@ -53,16 +55,18 @@ c=1,
 0.1, & x \in \Omega_2 \\
 0.05, & x \in \Omega_3 \\
 \end{cases},
-$$
+```
+
 where
-$$
+
+```math
 \begin{align*}
 \Omega &= (0, 1)^2 \\
 \Omega_1 &= (0.1, 0.3) \times (0.1, 0.2) \\
 \Omega_2 &= (0.4, 0.7) \times (0.1, 0.3) \\
 \Omega_3 &= (0.8, 1.0) \times (0.7, 1.0)
 \end{align*}
-$$
+```
 
 ## Problem 5 (Poisson Equation on L-shape)
 This last problem does not _really_ fit into the "general stiffness" matrix setting.
@@ -70,12 +74,14 @@ However, as we wish to put this experiment in the very same paper as the experim
 we put this experiment in this folder, too.
 
 This problem is given by the BVP
-$$
+
+```math
 \begin{align*}
 - \Delta u(x) &= 1, \quad x \in \Omega, \\
 u(x) &= 0, \quad x \in \partial \Omega,
 \end{align*}
-$$
+```
+
 where $\Omega := (-1, 1)^2 \setminus [0,1] \times [-1, 0]$,
 i.e., an L-shaped domain obtained by removing the fourth
 quadrant from the square of side length $2$ and centered at the origin.
@@ -106,18 +112,22 @@ we only solve exactly for academic reference and not to refine the mesh.
 ## Experiment 03 (Problem 1 with energy flattening-off)
 Considers the solution of *problem 1* by using
 CG iterations until
-$$
+
+```math
 E(u^{n-1}) - E(u^{n}) < \alpha \frac{E(u^{n_{\text{min}}}) - E(u^n)}{n - n_{\text{min}}}
-$$
+```
+
 is met.
 Then, we perform edge-based variational adaptivity to refine the mesh.
 
 ## Experiment 04 (Problem 2 with energy flattening-off)
 Considers the solution of *problem 2* by using
 CG iterations until
-$$
+
+```math
 E(u^{n-1}) - E(u^{n}) < \alpha \frac{E(u^{n_{\text{min}}}) - E(u^n)}{n - n_{\text{min}}}
-$$
+```
+
 is met.
 Then, we perform edge-based variational adaptivity to refine the mesh.
 
