@@ -2,16 +2,44 @@
 
 This repository holds the numerical experiments
 performed in [1].
-The underlying boundary value problem is
+On an open and bounded polygonal domain
+$\Omega \subset \R^2$, which will be either
+chosen to be the \emph{L-shaped domain}
+$\Omega_{\text{L}} := (-1, 1)^2 \setminus ([0,1] \times [-1, 0])$,
+or the \emph{square domain} $\Omega_{\text{S}} := (0, 1)^2$, we consider the numerical
+solution of the semilinear elliptic diffusion-reaction
+boundary value problem (BVP):
 $$
--\text{div} (\mathbf A(x) \nabla u(x))
-+ \phi(u)
-=
-f
+- \nabla \cdot
+\left(
+    \mathbf A (\mathbf x) \nabla u(\mathbf x)
+\right)
++ \phi(u(\mathbf x))
+    =
+f(\mathbf x),
+\mathbf x \in  \Omega
 $$
-with homogeneous Dirichlet boundary conditions.
-As in the paper, experiments are divided into linear and
-nonlinear experiments corresponding to either
+with homogeneous dirichlet boundary conditions
+$u(\mathbf x) = 0$, $\mathbf x \in \partial \Omega$.
+where $\phi \in \mathrm{C}^0(\mathbb{R})$ is non-decreasing,
+$f\in \mathrm{L^2}(\Omega)$,
+and $\mathbf A : \Omega \to \mathbb R^{2\times 2}$
+is a piecewise constant symmetric diffusion matrix that
+is uniformly positive definite,
+i.e. there exists a constant $C>0$ such that
+$$
+\forall \mathbf x \in \Omega
+\,:\,
+\inf_{\substack{\mathbf\xi\in\mathbb\R^2\\\mathbf\xi\neq\mathbf 0}}
+\frac{
+    \mathbf\xi^\intercal\mathbf A (\mathbf x)\mathbf\xi
+}{
+    \mathbf\xi^\intercal\mathbf\xi
+}
+\ge C.
+$$
+As in the paper, experiments are divided into _linear_ and
+_nonlinear_ experiments corresponding to either
 $\phi(u) = cu(x)$ with $c \in \{0, 1\}$ constant
 or $\phi$ monotonically increasing.
 
