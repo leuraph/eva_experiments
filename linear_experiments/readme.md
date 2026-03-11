@@ -3,14 +3,14 @@
 In this folder, we consider problems of the form
 
 ```math
-\nabla(A(x) \nabla u(x)) + c u(x) = 1,
+- \nabla \cdot (A(x) \nabla u(x)) + c u(x) = 1,
 ```
 
 where $A(x) \in \mathbb{R}^2$,
 $c \in \{0, 1\}$,
 $\Omega = (0, 1)^2$,
-and we impose homogeneous boundary conditions, i.e.
-$u(x) = 0$ for $x \in \partial \Omega$.
+and we impose homogeneous Dirichlet boundary conditions,
+i.e. $u(x) = 0$ for $x \in \partial \Omega$.
 Essentially, the problems differ only in the choice of
 the matrix $A(x)$.
 
@@ -23,7 +23,7 @@ the matrix $A(x)$.
 ```math
 A(x) =
 \begin{pmatrix}
--1 & 0 \\ 0 & -10^{-2}
+1 & 0 \\ 0 & 10^{-2}
 \end{pmatrix},
 \quad
 c=1
@@ -32,7 +32,7 @@ c=1
 ## Problem 2 (Singularly Perturbed)
 
 ```math
-A(x) = - 10^{-2}
+A(x) = 10^{-2}
 \begin{pmatrix}
 1 & 0 \\ 0 & 1
 \end{pmatrix},
@@ -43,7 +43,7 @@ c=1
 ## Problem 4 (Piecewise constant)
 
 ```math
-A(x) = -\kappa (x) \text{Id}_{2\times 2},
+A(x) = \kappa (x) \text{Id}_{2\times 2},
 \quad
 c=1,
 \quad
