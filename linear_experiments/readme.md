@@ -133,9 +133,11 @@ we only solve exactly for academic reference and not to refine the mesh.
 ## Experiment 10 (Problem 4 with energy flattening-off and preconditioner $P=\text{diag}(\text{lhs})^{-1}$)
 Considers the solution of *problem 4* by using
 CG iterations with a diagonal prconditioner until
-$$
+
+```math
 E(u^{n-1}) - E(u^{n}) < \alpha \frac{E(u^{n_{\text{min}}}) - E(u^n)}{n - n_{\text{min}}}
-$$
+```
+
 is met.
 Then, we perform edge-based variational adaptivity to refine the mesh.
 
@@ -160,9 +162,11 @@ we only solve exactly for academic reference and not to refine the mesh.
 ## Experiment 13 (Problem 5 with energy flattening-off)
 Considers the solution of *problem 5* by using
 CG iterations until
-$$
+
+```math
 E(u^{n-1}) - E(u^{n}) < \alpha \frac{E(u^{n_{\text{min}}}) - E(u^n)}{n - n_{\text{min}}}
-$$
+```
+
 is met.
 Then, we perform edge-based variational adaptivity to refine the mesh.
 
@@ -309,11 +313,13 @@ Calculating CG approximations and their energy norm squared...
 ```
 
 Our reference value for problem 01 is therefore
-$$
+
+```math
 \|u\|^2_a \approx \|u^{7562721}_h\|^2_a
 =
 0.07121857719182778,
-$$
+```
+
 which can be found in the file
 `energy_norm_squared_reference_value_problem_01.dat`
 
@@ -403,11 +409,13 @@ slurmstepd: error: Detected 1 oom_kill event in StepId=27752261.batch. Some of t
 ```
 
 Our reference value for problem 02 is therefore
-$$
+
+```math
 \|u\|^2_a \approx \|u^{7562721}_h\|^2_a
 =
 0.6509451171871544
-$$
+```
+
 which can be found in the file
 `energy_norm_squared_reference_value_problem_02.dat`
 
@@ -456,11 +464,13 @@ slurmstepd: error: Detected 1 oom_kill event in StepId=29147208.batch. Some of t
 ```
 
 Our reference value for problem 04 is therefore
-$$
+
+```math
 \|u\|^2_a \approx \|u^h_{7562721}\|^2_a
 =
 0.040756312505732355
-$$
+```
+
 which can be found in the file
 `energy_norm_squared_reference_value_problem_04.dat`
 
@@ -468,9 +478,11 @@ which can be found in the file
 Note that the analytical solution of this problem remains unknown.
 However, we do have an estimate of the value $\| u \|_a^2$ at hand,
 i.e. we received, via mail (Patrick Bammer), the value
-$$
+
+```math
 \| u \|_a^2 \approx 0.214075802220546
-$$
+```
+
 which can be found in the file
 `energy_norm_squared_reference_value_problem_05.dat`.
 
