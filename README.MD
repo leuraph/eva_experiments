@@ -33,7 +33,7 @@ i.e. there exists a constant $C>0$ such that
 
 $$
 \forall \mathbf{x} \in \Omega
-\,:\,
+~:~
 \inf_{
     \substack{
         \mathbf{\xi} \in \mathbb{R}^2
