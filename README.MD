@@ -11,14 +11,14 @@ solution of the semilinear elliptic diffusion-reaction
 boundary value problem (BVP):
 
 $$
-- \nabla \cdot
+-\nabla \cdot
 \left(
-    \mathbf A (\mathbf x) \nabla u(\mathbf x)
+    \mathbf{A} (\mathbf{x}) \nabla u(\mathbf{x})
 \right)
-+ \phi(u(\mathbf x))
++\phi(u(\mathbf{x}))
     =
-f(\mathbf x),
-\mathbf x \in  \Omega
+f(\mathbf{x}),
+\mathbf{x} \in  \Omega
 $$
 
 with homogeneous dirichlet boundary conditions
@@ -31,13 +31,18 @@ is uniformly positive definite,
 i.e. there exists a constant $C>0$ such that
 
 $$
-\forall \mathbf x \in \Omega
+\forall \mathbf{x} \in \Omega
 \,:\,
-\inf_{\substack{\mathbf\xi\in\mathbb\R^2\\\mathbf\xi\neq\mathbf 0}}
+\inf_{
+    \substack{
+        \mathbf{\xi} \in \mathbb{R}^2
+        \\
+        \mathbf{\xi} \neq \mathbf{0}}
+    }
 \frac{
-    \mathbf\xi^\intercal\mathbf A (\mathbf x)\mathbf\xi
+    \mathbf{\xi}^\intercal\mathbf{A} (\mathbf{x})\mathbf{\xi}
 }{
-    \mathbf\xi^\intercal\mathbf\xi
+    \mathbf{\xi}^\intercal\mathbf{\xi}
 }
 \ge C.
 $$
