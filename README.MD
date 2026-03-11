@@ -4,9 +4,10 @@ This repository holds the numerical experiments
 performed in [1].
 On an open and bounded polygonal domain
 $\Omega \subset \mathbb{R}^2$, which will be either
-chosen to be the \emph{L-shaped domain}
+chosen to be the _L-shaped domain_
 $\Omega_{\text{L}} := (-1, 1)^2 \setminus ([0,1] \times [-1, 0])$,
-or the \emph{square domain} $\Omega_{\text{S}} := (0, 1)^2$, we consider the numerical
+or the _square domain_ $\Omega_{\text{S}} := (0, 1)^2$,
+we consider the numerical
 solution of the semilinear elliptic diffusion-reaction
 boundary value problem (BVP):
 
