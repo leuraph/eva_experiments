@@ -110,14 +110,17 @@ that the exact solution $u : \Omega \to \mathbb{R}$ is known.
 Nevertheless, the numerical evaluation of
 the energy norm error turns out to be non-trivial.
 Consider
-$$
+
+```math
 \|u_N^\star - u\|_a^2
 =
 a(u_N^\star, u_N^\star) + a(u, u) - 2a(u, u_N^\star).
-$$
+```
+
 The **first term** is easily computed with the stiffness matrix.
 To evaluate the **second term**, i.e.
-$$
+
+```math
 a(u, u) = 
 \int_\Omega 
 \underbrace{
@@ -126,7 +129,8 @@ a(u, u) =
     \rangle
 }_{=: I(\mathbf{x})}
 ~\mathrm{d}\mathbf{x},
-$$
+```
+
 we compute the integrand $I(\mathbf{x})$ symbolically
 and approximate the integral $\int_\Omega I(\mathbf{x}) ~\mathrm{d} \mathbf{x}$ numerically by integrating the symbolic expression $I(\mathbf{x})$
 over the finest _graded mesh_ available.
@@ -134,22 +138,26 @@ over the finest _graded mesh_ available.
 
 The **third term** is re-written, using the fact that
 $u$ solves the weak equation
-$$
+
+```math
 \int \nabla u \nabla v
 + \int_\Omega \phi(u) v
 = \int_\Omega f v
 \quad
 \forall v \in\mathrm{H}^1_0 (\Omega),
-$$
+```
+
 i.e. we have
-$$
+
+```math
 - 2 a(u, u_N^\star)
 =
 -2
 \left[
     \int_\Omega f u^\star_N - \int_\Omega \phi(u) u^\star_N
 \right],
-$$
+```
+
 which, given that we know both
 $\phi : \mathbb R \to \mathbb R$
 and
@@ -157,14 +165,15 @@ $u: \Omega \to \mathbb R$ analytically,
 can be both integrated using the same routine.
 
 In summary, this yields
-$$
+
+```math
 \|u_N^\star - u\|_a^2
 =
 a(u_N^\star, u_N^\star)
 + a(u, u)
 -2 \int_\Omega f u^\star_N 
 +2 \int_\Omega \phi(u) u^\star_N.
-$$
+```
 
 An implementation of all of these computations
 is found in the post-processing script
