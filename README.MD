@@ -24,7 +24,7 @@ $$
 
 with homogeneous dirichlet boundary conditions
 $u(\mathbf x) = 0$, $\mathbf x \in \partial \Omega$.
-where $\phi \in \mathrm{C}^0(\mathbb{R})$ is non-decreasing,
+Here, $\phi \in \mathrm{C}^0(\mathbb{R})$ is non-decreasing,
 $f\in \mathrm{L^2}(\Omega)$,
 and $\mathbf A : \Omega \to \mathbb R^{2\times 2}$
 is a piecewise constant symmetric diffusion matrix that
