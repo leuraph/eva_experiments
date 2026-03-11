@@ -69,10 +69,6 @@ where
 ```
 
 ## Problem 5 (Poisson Equation on L-shape)
-This last problem does not _really_ fit into the "general stiffness" matrix setting.
-However, as we wish to put this experiment in the very same paper as the experiments above (eva2025), for the sake of convenience and congruency,
-we put this experiment in this folder, too.
-
 This problem is given by the BVP
 
 ```math
