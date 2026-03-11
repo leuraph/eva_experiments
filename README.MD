@@ -3,7 +3,7 @@
 This repository holds the numerical experiments
 performed in [1].
 On an open and bounded polygonal domain
-$\Omega \subset \R^2$, which will be either
+$\Omega \subset \mathbb{R}^2$, which will be either
 chosen to be the \emph{L-shaped domain}
 $\Omega_{\text{L}} := (-1, 1)^2 \setminus ([0,1] \times [-1, 0])$,
 or the \emph{square domain} $\Omega_{\text{S}} := (0, 1)^2$, we consider the numerical
