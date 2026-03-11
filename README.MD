@@ -9,6 +9,7 @@ $\Omega_{\text{L}} := (-1, 1)^2 \setminus ([0,1] \times [-1, 0])$,
 or the \emph{square domain} $\Omega_{\text{S}} := (0, 1)^2$, we consider the numerical
 solution of the semilinear elliptic diffusion-reaction
 boundary value problem (BVP):
+
 $$
 - \nabla \cdot
 \left(
@@ -19,6 +20,7 @@ $$
 f(\mathbf x),
 \mathbf x \in  \Omega
 $$
+
 with homogeneous dirichlet boundary conditions
 $u(\mathbf x) = 0$, $\mathbf x \in \partial \Omega$.
 where $\phi \in \mathrm{C}^0(\mathbb{R})$ is non-decreasing,
@@ -27,6 +29,7 @@ and $\mathbf A : \Omega \to \mathbb R^{2\times 2}$
 is a piecewise constant symmetric diffusion matrix that
 is uniformly positive definite,
 i.e. there exists a constant $C>0$ such that
+
 $$
 \forall \mathbf x \in \Omega
 \,:\,
@@ -38,6 +41,7 @@ $$
 }
 \ge C.
 $$
+
 As in the paper, experiments are divided into _linear_ and
 _nonlinear_ experiments corresponding to either
 $\phi(u) = cu(x)$ with $c \in \{0, 1\}$ constant
